@@ -452,11 +452,65 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <!-- <div class="back-btn-wrapper"> -->
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-back-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <form class="cont-form">
+          <h2 class="modal-tittle">
+            Leave your contacts and we will call you back
+          </h2>
+          <ul class="cont-form-list list">
+            <li class="input-item">
+              <p class="input-tittle">Name</p>
+              <input
+                type="text"
+                class="cont-form-input"
+                name="user_name"
+                required
+              />
+            </li>
+            <li class="input-item">
+              <p class="input-tittle">Phone</p>
+              <input
+                type="tel"
+                class="cont-form-input"
+                name="user_phone"
+                required
+              />
+            </li>
+            <li class="input-item">
+              <p class="input-tittle">Email</p>
+              <input
+                type="email"
+                class="cont-form-input"
+                name="user_email"
+                required
+              />
+            </li>
+            <li>
+              <p class="input-tittle">Comment</p>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="area-from-comment"
+                placeholder="Text input"
+              ></textarea>
+            </li>
+          </ul>
+
+          <p class="checkbox">
+            I accept the terms and conditions of the
+            <a href="/" class="privacy-policy">Privacy Policy</a>
+          </p>
+
+          <button class="modal-btn-send button" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
