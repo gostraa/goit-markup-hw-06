@@ -449,9 +449,9 @@
         </div>
 
         <div class="footer-form-wrapper">
-          <h2 class="footer-form-tittle">Subscribe</h2>
+          <p class="footer-form-tittle">Subscribe</p>
 
-          <div class="input-btn-wrapper">
+          <form class="input-btn-wrapper">
             <label for="e-mail" class="footer-form-lable">
               <input
                 type="text"
@@ -468,7 +468,7 @@
                 <use href="./images/icons.svg#icon-airplane" />
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -480,87 +480,96 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-
+        <p class="modal-tittle">
+          Leave your contacts and we will call you back
+        </p>
         <form class="cont-form">
-          <h2 class="modal-tittle">
-            Leave your contacts and we will call you back
-          </h2>
           <div class="cont-form-wrapper">
-            <ul class="input-list list">
-              <li class="input-item">
-                <label for="user_name" class="input-tittle">Name</label>
+            <label for="user-name" class="input-tittle">Name</label>
+            <div class="input-icon-wrapper">
+              
                 <input
                   type="text"
                   class="cont-form-input"
-                  id="user_name"
-                  name="user_name"
+                  id="user-name"
+                  name="user-name"
                   required
                 />
 
                 <svg class="input-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-person-black" />
                 </svg>
-              </li>
+              </div>
+            </div>
 
-              <li class="input-item">
-                <label for="user_phone" class="input-tittle">Phone</label>
+            <div class="cont-form-wrapper">
+            <label for="user_phone" class="input-tittle">Phone</label>
+             <div class="input-icon-wrapper">
+            <input
+              type="tel"
+              class="cont-form-input"
+              id="user_phone"
+              name="user_phone"
+              required
+            />
+            <svg class="input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black" />
+            </svg>
+            </div>
+            </div>
 
-                <input
-                  type="tel"
-                  class="cont-form-input"
-                  id="user_phone"
-                  name="user_phone"
-                  required
-                />
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone-black" />
-                </svg>
-              </li>
+            <div class="cont-form-wrapper">
+            <label for="user_email" class="input-tittle">Email</label>
+            <div class="input-icon-wrapper">
+            <input
+              type="email"
+              class="cont-form-input"
+              id="user_email"
+              name="user_email"
+              required
+            />
+            <svg class="input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black" />
+            </svg>
+            </div>
+           </div>
 
-              <li class="input-item">
-                <label for="user_email" class="input-tittle">Email</label>
 
-                <input
-                  type="email"
-                  class="cont-form-input"
-                  id="user_email"
-                  name="user_email"
-                  required
-                />
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email-black" />
-                </svg>
-              </li>
-            </ul>
-            <div>
-              <label for="user_comment" class="input-tittle">Comment</label>
+            <div class="textarea-wrapper">
+              <label for="user-comment" class="input-tittle">Comment</label>
               <textarea
-                name="user_comment"
-                id="user_comment"
+                name="user-comment"
+                id="user-comment"
                 cols="30"
                 rows="10"
                 class="area-from-comment"
                 placeholder="Text input"
               ></textarea>
             </div>
+          
+
+          <div class="checkbox-wrapper ">
+            <input
+              id="user-privacy"
+              class="checkbox  visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+
+            <label  class="checkbox-label" for="user-privacy">
+              <span class="fake-checkbox">
+                <svg class="icon-checkbox" width="10" height="8" >
+                  <use href="./images/icons.svg#icon-click"/>
+                </svg>
+              </span>I accept the terms and conditions of the&nbsp;
+              <a  href="/" class="privacy-policy">Privacy Policy</a></label
+            >
           </div>
-
-          <!-- <input class="checkbox" type="checkbox" /> -->
-
-          <input
-            id="user-policy"
-            class="checkbox visually-hidden"
-            type="checkbox"
-            name="user-policy"
-          />
-
-          <label for="user-policy" class="checkbox-label"
-            >I accept the terms and conditions of the&nbsp;
-            <a href="/" class="privacy-policy">Privacy Policy</a></label
-          >
-
-          <button class="modal-btn-send button" type="submit">Send</button>
+            <button class="modal-btn-send button" type="submit">Send</button>
+          
         </form>
+        </div>
       </div>
     </div>
 
