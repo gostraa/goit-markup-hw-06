@@ -699,6 +699,7 @@ margin-bottom: 16px ;
 .footer-media-icon {
    fill: var(--third-bg-color);
     margin: 8px;
+    gap: 24px;
 }
 
 
@@ -728,16 +729,21 @@ margin-bottom: 16px ;
     margin-right: 24px;
     
     padding-left: 16px;
-
+    color: var(--primary-bg-color);
+     font-size: 12px;
+     line-height: 1.5;
+     letter-spacing: 0.04em;
 
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid var(--primary-bg-color);
 
     border-radius: 4px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-input::placeholder{
-    color: var(--primary-bg-color);
+    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 1.166;
@@ -749,9 +755,11 @@ margin-bottom: 16px ;
 .subscribe-btn{
 
     display: flex;
-    justify-content: space-between;
+   justify-content: center;
+   align-items: center;
     cursor: pointer;
     min-width: 165px ;
+    height: 40px;
 
 
 
@@ -761,16 +769,19 @@ margin-bottom: 16px ;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: center;
+   
 
    
     background-color: var(--accent);
     border-radius: 4px;
     padding: 8px 24px;
-
+    border: none;
     transition: backgruond-color 250ms  cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-btn-icon{
+    margin-left: 16px;
+}
 
 .subscribe-btn:hover, .subscribe-btn:focus{
     background-color: var(--accent-two);
@@ -1124,7 +1135,7 @@ border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     line-height: 1.17;
     letter-spacing: 0.04em;
      color: rgba(46, 47, 66, 0.4);
-     border: 1px solid rgba(46, 47, 66, 0.2);
+     border: 1px solid rgba(46, 47, 66, 0.4);
      border-radius: 4px;
      background-color: transparent;
      padding: 8px 16px;
@@ -1178,7 +1189,7 @@ border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 .checkbox:checked + .checkbox-label>.fake-checkbox{
      background-color: var(--accent-two);
      border: none;
-    fill: var(--primary-bg-color);
+    fill: var(--third-bg-color);
 }
 
 .privacy-policy{
