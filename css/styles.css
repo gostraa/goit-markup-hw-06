@@ -699,14 +699,14 @@ margin-bottom: 16px ;
 .footer-media-icon {
    fill: var(--third-bg-color);
     margin: 8px;
-    gap: 24px;
+    
 }
 
 
 .input-btn-wrapper{
     display: flex;
     align-items: center;
-
+     gap: 24px;
 }
 
 .footer-form-tittle{
@@ -726,7 +726,6 @@ margin-bottom: 16px ;
     width: 264px;
     height: 40px;
 
-    margin-right: 24px;
     
     padding-left: 16px;
     color: var(--primary-bg-color);
