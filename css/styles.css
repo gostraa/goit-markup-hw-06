@@ -103,7 +103,7 @@ header{
 }
 
 
-.head.container{
+.head-container{
     display: flex;
 
     align-items: center;
@@ -112,7 +112,7 @@ header{
 
 /* LOGO */
 
-.logo.part{
+.logo-part{
     color: var(--secondary-bg-color);
 }
 
@@ -374,7 +374,7 @@ background-color:var(--accent-two);
 
 /* SECTION 3 */
 
-.projects.section{
+.projects{
     padding-top:0;
 }
 
